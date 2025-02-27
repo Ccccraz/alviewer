@@ -21,6 +21,7 @@
     "@tiptap/pm": "^2.11.5",
     "@tiptap/starter-kit": "^2.11.5",
     "@tiptap/vue-3": "^2.11.5",
+    "axios": "^1.8.0",
     "daisyui": "5.0.0-beta.8",
     "pinia": "^3.0.1",
     "tailwindcss": "^4.0.8",
