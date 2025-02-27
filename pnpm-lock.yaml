@@ -20,6 +20,9 @@ importers:
       '@tiptap/vue-3':
         specifier: ^2.11.5
         version: 2.11.5(@tiptap/core@2.11.5(@tiptap/pm@2.11.5))(@tiptap/pm@2.11.5)(vue@3.5.13(typescript@5.7.3))
+      axios:
+        specifier: ^1.8.0
+        version: 1.8.0
       daisyui:
         specifier: 5.0.0-beta.8
         version: 5.0.0-beta.8
@@ -1237,6 +1240,9 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
+  axios@1.8.0:
+    resolution: {integrity: sha512-AS3x1klSQ4VeoeAaOyITVjomjITxIRgpKVgAXhE8QFJiNiYliuU+cW0p7XpqvlwNKmiwE57aNEyhPtsfAxERqg==}
+
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
@@ -1610,6 +1616,15 @@ packages:
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
+
+  follow-redirects@1.15.9:
+    resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
 
   foreground-child@3.3.0:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
@@ -2262,6 +2277,9 @@ packages:
 
   proto-list@1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}
+
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
   punycode.js@2.3.1:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
@@ -3860,6 +3878,14 @@ snapshots:
 
   asynckit@0.4.0: {}
 
+  axios@1.8.0:
+    dependencies:
+      follow-redirects: 1.15.9
+      form-data: 4.0.2
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+
   balanced-match@1.0.2: {}
 
   birpc@0.2.19: {}
@@ -4265,6 +4291,8 @@ snapshots:
       keyv: 4.5.4
 
   flatted@3.3.3: {}
+
+  follow-redirects@1.15.9: {}
 
   foreground-child@3.3.0:
     dependencies:
@@ -4918,6 +4946,8 @@ snapshots:
       prosemirror-transform: 1.10.2
 
   proto-list@1.2.4: {}
+
+  proxy-from-env@1.1.0: {}
 
   punycode.js@2.3.1: {}
 
