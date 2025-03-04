@@ -15,6 +15,6 @@ const editor = useEditor({
 
 <template>
   <div class="overflow-y-auto">
-    <editor-content :editor="editor" class="m-4 p-4" />
+    <editor-content :editor="editor" class="p-4" />
   </div>
 </template>

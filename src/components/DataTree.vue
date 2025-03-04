@@ -17,9 +17,9 @@ const api = axios.create({
 const surgeries = ref<ISurgeries>()
 const treeData = ref<TreeOption[]>([])
 
-onMounted(() => {
-  listSurgeries()
-})
+// onMounted(() => {
+//   listSurgeries()
+// })
 
 async function listSurgeries() {
   try {
@@ -60,13 +60,11 @@ function getTree() {
 
 <template>
   <div
-    class="card border border-base-300 rounded-xl h-[calc(100vh-2*theme(spacing.4))] m-4 shadow-sm flex flex-col"
+    class="card bg-base-300 rounded-xl h-[calc(100vh-2*theme(spacing.4))] m-4 shadow-sm flex flex-col"
   >
-    <input
-      type="text"
-      placeholder="搜索"
-      class="input rounded-xl m-4 mb-0 min-h-10 h-fit place-self-center"
-    />
+    <div class="p-4 pb-0">
+      <input type="text" placeholder="搜索" class="input rounded-xl w-full min-h-10 bg-base-300" />
+    </div>
     <n-divider />
     <div class="flex justify-start w-full p-8 pt-0 overflow-y-auto">
       <n-tree
